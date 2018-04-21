@@ -51,9 +51,9 @@ namespace RemixMe.IdentityApi.Controllers
         {
             UserModel user = null;
 
-            if (login.Username == "admin" && login.Password == "admin")
+            if (login.Username == "debug" && login.Password == "debug")
             {
-                user = new UserModel { Name = "admin", Email = "admin@admin.com" };
+                user = new UserModel { Name = "debug", Email = "debug@debug.com" };
             }
             return user;
         }
